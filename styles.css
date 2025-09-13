@@ -161,6 +161,47 @@ body.reception-page {
     }
 }
 
+.directions-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+.directions-button:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.directions-button i {
+    font-size: 24px;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.directions-button:hover i {
+    transform: translateY(-3px);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
 /* Small mobile devices */
 @media (max-width: 380px) {
     h1 {
