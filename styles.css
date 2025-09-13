@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
     background: url('images/marriage.png') center center;
     background-size: cover;
@@ -29,10 +29,13 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
     margin-bottom: 2rem;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     animation: glow 2s ease-in-out infinite alternate;
+    font-weight: 700;
+    letter-spacing: 1px;
 }
 
 @keyframes glow {
@@ -55,7 +58,8 @@ h1 {
 .cosmic-button {
     display: inline-block;
     padding: 1rem 2rem;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-family: 'Dancing Script', cursive;
     text-decoration: none;
     color: #fff;
     background: rgba(255, 255, 255, 0.15);
@@ -90,6 +94,49 @@ body.reception-page {
     background: url('images/reception.png') center center;
     background-size: cover;
     background-attachment: fixed;
+    color: #222;
+}
+
+.reception-page h1 {
+    color: #111;
+    text-shadow: 2px 2px 4px rgba(255, 217, 0, 0.3);
+}
+
+.reception-page h2 {
+    color: #222;
+    text-shadow: 1px 1px 3px rgba(255, 217, 0, 0.3);
+}
+
+.reception-page p {
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+}
+
+.reception-page .cosmic-button {
+    color: #111;
+    border: 2px solid rgba(255, 217, 0, 0.6);
+    background: rgba(255, 217, 0, 0.15);
+    text-shadow: 1px 1px 2px rgba(255, 217, 0, 0.3);
+}
+
+.reception-page .cosmic-button:hover {
+    background: rgba(255, 217, 0, 0.25);
+    box-shadow: 0 0 15px rgba(255, 217, 0, 0.3);
+}
+
+.reception-page .directions-button {
+    background: rgba(255, 217, 0, 0.2);
+    border: 2px solid rgba(255, 217, 0, 0.6);
+}
+
+.reception-page .directions-button:hover {
+    background: rgba(255, 217, 0, 0.3);
+    box-shadow: 0 0 15px rgba(255, 217, 0, 0.4);
+}
+
+.reception-page .directions-button i {
+    color: #111;
+    text-shadow: 1px 1px 2px rgba(255, 217, 0, 0.5);
 }
 
 @keyframes fadeIn {
@@ -139,12 +186,12 @@ body.reception-page {
         margin: 1.5rem 1rem;
     }
 
-    .content-box h2 {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .content-box p {
+.content-box h2 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}    .content-box p {
         font-size: 1.2rem;
         line-height: 1.6;
         margin: 0.8rem 0;
