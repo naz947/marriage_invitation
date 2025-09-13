@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: 'Arial', sans-serif;
     min-height: 100vh;
-    background: url('images/ChatGPT Image Sep 13, 2025, 09_21_43 PM.png') center center;
+    background: url('images/marriage.png') center center;
     background-size: cover;
     background-attachment: fixed;
     color: #fff;
@@ -81,13 +81,13 @@ h1 {
 
 /* Specific page backgrounds */
 body.marriage-page {
-    background: url('images/ChatGPT Image Sep 13, 2025, 09_21_43 PM.png') center center;
+    background: url('images/marriage.png') center center;
     background-size: cover;
     background-attachment: fixed;
 }
 
 body.reception-page {
-    background: url('images/ChatGPT Image Sep 13, 2025, 09_21_49 PM.png') center center;
+    background: url('images/reception.png') center center;
     background-size: cover;
     background-attachment: fixed;
 }
