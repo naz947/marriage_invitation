@@ -1,9 +1,32 @@
+/* Root variables for consistent scaling */
+:root {
+    --padding-small: clamp(0.5rem, 2vw, 1rem);
+    --padding-medium: clamp(1rem, 3vw, 2rem);
+    --padding-large: clamp(1.5rem, 5vw, 3rem);
+    --font-size-base: clamp(1rem, 2.5vw, 1.2rem);
+    --font-size-h1: clamp(2rem, 6vw, 4rem);
+    --font-size-h2: clamp(1.5rem, 4vw, 2.5rem);
+    --button-width: clamp(200px, 80%, 300px);
+}
+
 /* Base styles */
-body {
+*, *::before, *::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+html {
+    font-size: 16px;
+    height: -webkit-fill-available;
+}
+
+body {
+    margin: 0;
+    padding: env(safe-area-inset-top, 0) env(safe-area-inset-right, 0) env(safe-area-inset-bottom, 0) env(safe-area-inset-left, 0);
     font-family: 'Quicksand', sans-serif;
     min-height: 100vh;
+    min-height: -webkit-fill-available;
     background: url('images/marriage.png') center center;
     background-size: cover;
     background-attachment: fixed;
@@ -18,9 +41,9 @@ body {
 .container {
     position: relative;
     z-index: 1;
-    max-width: 800px;
+    width: min(90%, 800px);
     margin: 0 auto;
-    padding: 2rem;
+    padding: var(--padding-large);
     text-align: center;
     display: flex;
     flex-direction: column;
