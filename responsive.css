@@ -1,0 +1,174 @@
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2rem;
+        padding: 0 1.5rem;
+        line-height: 1.2;
+    }
+
+    .container {
+        padding: 2rem;
+        width: 90%;
+        max-width: 700px;
+    }
+
+    .button-container {
+        gap: 2rem;
+    }
+
+    .cosmic-button {
+        font-size: 1.4rem;
+        padding: 1.2rem 2.5rem;
+    }
+
+    .content-box {
+        padding: 2rem;
+        margin: 2rem 1rem;
+    }
+
+    .content-box h2 {
+        font-size: 2.2rem;
+        margin-bottom: 1.8rem;
+    }
+
+    .content-box p {
+        font-size: 1.3rem;
+        line-height: 1.7;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .button-container {
+        flex-direction: column;
+        gap: 1.5rem;
+        padding: 0 1rem;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .container {
+        padding: 1.5rem;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .cosmic-button {
+        width: 100%;
+        margin: 0 auto;
+        padding: 1.2rem;
+        font-size: 1.4rem;
+        text-align: center;
+        display: block;
+    }
+
+    .content-box {
+        padding: 1.5rem;
+        margin: 1.5rem 0.5rem;
+    }
+
+    .content-box h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .content-box p {
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin: 1rem 0;
+    }
+
+    .home-button {
+        margin-top: 2rem;
+        width: 80%;
+        max-width: 280px;
+    }
+
+    .directions-button {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .directions-button i {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .button-container {
+        padding: 0 0.5rem;
+    }
+
+    .cosmic-button {
+        padding: 1rem;
+        font-size: 1.3rem;
+    }
+
+    .content-box {
+        padding: 1.2rem;
+        margin: 1.2rem 0.3rem;
+    }
+
+    .content-box h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .content-box p {
+        font-size: 1.1rem;
+        line-height: 1.5;
+        margin: 0.8rem 0;
+    }
+
+    .directions-button {
+        bottom: 15px;
+        right: 15px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .directions-button i {
+        font-size: 18px;
+    }
+}
+
+@media (max-height: 600px) and (orientation: landscape) {
+    .container {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .button-container {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+
+    .cosmic-button {
+        width: auto;
+        min-width: 150px;
+    }
+}

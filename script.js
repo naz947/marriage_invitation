@@ -7,15 +7,18 @@ document.addEventListener('DOMContentLoaded', () => {
         container.style.opacity = '1';
     }, 100);
 
-    // Add smooth transition for page navigation
-    document.querySelectorAll('a').forEach(link => {
+    // Add smooth transition for page navigation (excluding the directions button)
+    document.querySelectorAll('a:not(.directions-button)').forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
-            const href = this.getAttribute('href');
-            document.body.style.opacity = '0';
-            setTimeout(() => {
-                window.location.href = href;
-            }, 500);
+            // Only prevent default for internal navigation
+            if (!this.hasAttribute('target')) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                document.body.style.opacity = '0';
+                setTimeout(() => {
+                    window.location.href = href;
+                }, 500);
+            }
         });
     });
 });
