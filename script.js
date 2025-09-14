@@ -1,3 +1,33 @@
+// Create page transition element
+const transitionElement = document.createElement('div');
+transitionElement.className = 'page-transition';
+document.body.appendChild(transitionElement);
+
+// Handle page transitions
+document.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', function(e) {
+        if (this.href.includes(window.location.origin)) {
+            e.preventDefault();
+            const href = this.href;
+            
+            // Start transition
+            transitionElement.style.opacity = '1';
+            
+            // Navigate after animation
+            setTimeout(() => {
+                window.location.href = href;
+            }, 5000);
+        }
+    });
+});
+
+// Handle back/forward navigation
+window.addEventListener('pageshow', (event) => {
+    if (event.persisted) {
+        transitionElement.style.opacity = '0';
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     // Optimize video loading
     const video = document.querySelector('.video-background video');
