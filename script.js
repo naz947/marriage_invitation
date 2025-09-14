@@ -1,4 +1,28 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Optimize video loading
+    const video = document.querySelector('.video-background video');
+    if (video) {
+        // Reduce initial loading time
+        video.load();
+        video.play().catch(function(error) {
+            console.log("Video autoplay failed:", error);
+        });
+
+        // Pause video when not visible to save resources
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                video.pause();
+            } else {
+                video.play().catch(() => {});
+            }
+        });
+
+        // Handle mobile devices
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            video.setAttribute('playsinline', '');
+            video.setAttribute('preload', 'auto');
+        }
+    }
     // Add fade-in effect to the container
     const container = document.querySelector('.container');
     container.style.opacity = '0';
